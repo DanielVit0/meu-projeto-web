@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Pseudo-classes e Pseudo-elementos</title>
+
+  <style>
+    /* RESET SIMPLES */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* =========================
+       LINKS (pseudo-classes)
+    ========================= */
+
+    a {
+      color: blueviolet;
+      text-decoration: none;
+      padding: 5px 10px;
+      display: inline-block;
+      margin: 5px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    a:link {
+      color: blueviolet;
+    }
+
+    a:visited {
+      color: gray;
+    }
+
+    a:hover {
+      background: blueviolet;
+      color: white;
+    }
+
+    a:active {
+      background: red;
+      color: white;
+    }
+
+    /* =========================
+       FORMULÁRIO (pseudo-classes)
+    ========================= */
+
+    input {
+      display: block;
+      margin: 10px 0;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input:focus {
+      background: #f0e6ff;
+      border-color: blueviolet;
+      outline: none;
+    }
+
+    input:required {
+      border-left: 4px solid red;
+    }
+
+    input:checked {
+      transform: scale(1.1);
+    }
+
+    /* =========================
+       TEXTO (pseudo-elementos)
+    ========================= */
+
+    p::first-line {
+      color: red;
+      font-weight: bold;
+    }
+
+    p::first-letter {
+      font-size: 30px;
+      color: blueviolet;
+    }
+
+    p::selection {
+      background: yellow;
+      color: black;
+    }
+
+    p{
+        color:red !important;
+    }
+
+    /* =========================
+       BEFORE / AFTER
+    ========================= */
+
+    h2::before {
+      content: "🔥 ";
+      color: rgb(255, 0, 0);
+    }
+
+    h2::after {
+      content: " ✔";
+      color: blue;
+    }
+
+    /* =========================
+       DIV HOVER (extra)
+    ========================= */
+
+    .box {
+      background: #eee;
+      padding: 15px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .box:hover {
+      background: #ddd;
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Menu de Navegação</h2>
+
+  <a href="https://google.com">Google</a>
+  <a href="https://facebook.com">Facebook</a>
+  <a href="https://instagram.com">Instagram</a>
+
+  <h2>Conteúdo</h2>
+
+  <div class="box">
+    <p style="color: purple;">
+      Esse é um parágrafo de exemplo para testar pseudo-elementos.
+      Repare que a primeira linha fica vermelha e a primeira letra maior.
+      Além disso, quando você seleciona o texto, ele muda de cor.
+    </p>
+  </div>
+
+  <h2>Formulário</h2>
+
+  <input type="text" placeholder="Digite seu nome" required>
+
+  <label>
+    <input type="checkbox"> Aceito os termos
+  </label>
+
+  <label>
+    <input type="radio" name="opcao"> Sim
+  </label>
+
+  <label>
+    <input type="radio" name="opcao"> Não
+  </label>
+
+</body>
+</html>

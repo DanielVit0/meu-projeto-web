@@ -1,0 +1,16 @@
+html {
+    border: 1px solid black;
+    margin: 20px;
+    background: rgb(219, 219, 219);
+}
+
+.anuncio {
+    border: 1px solid red;
+    color: rgb(36, 36, 36);
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+.anuncio h3 {
+    color: gray;
+}
+
