@@ -1,0 +1,68 @@
+
+
+body{
+    background: url("/img/pattern-bg.jpg");
+    background-size: 1950px;
+    background-repeat: repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    
+}
+
+#main{
+    width: 900px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Aproveita e já remove aquele espaço chato embaixo da imagem */
+}
+/**remover espaço entre logo menu**/
+
+
+#content {
+    margin: 0 auto;
+    background: #FF9100;
+    padding: 10px;
+    
+    
+
+}
+#menu {
+    background: #FF8500;
+    padding: 10px;
+    margin: 0px 0px;
+    text-align: right;
+    
+}
+
+
+
+a {
+    color: #03045E;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    padding: 5px;
+
+    transition: 0.5s;
+}
+
+a:hover{
+    color: #FF9E00;
+    background-color: #03045E;
+    border-radius: 3em;
+
+}
+
+h1 {
+    color: #03045E;
+}
+
+#footer {
+    background: #FF9E00;
+    text-align: center;
+}
